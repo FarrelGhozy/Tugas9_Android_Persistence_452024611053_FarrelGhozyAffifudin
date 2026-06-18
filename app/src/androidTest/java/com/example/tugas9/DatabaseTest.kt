@@ -55,10 +55,12 @@ class DatabaseTest {
     fun insertAndDelete() = runBlocking {
         noteDao.insert(note1)
         noteDao.insert(note2)
-        noteDao.delete(note1)
-        val notes = noteDao.getAllNotes().first()
-        assert(notes.size == 1)
-        assert(notes[0].title == "Belajar Coroutines")
+        val notesBefore = noteDao.getAllNotes().first()
+        val noteToDelete = notesBefore.first { it.title == "Belajar Android" }
+        noteDao.delete(noteToDelete)
+        val notesAfter = noteDao.getAllNotes().first()
+        assert(notesAfter.size == 1)
+        assert(notesAfter[0].title == "Belajar Coroutines")
     }
 
     @Test
