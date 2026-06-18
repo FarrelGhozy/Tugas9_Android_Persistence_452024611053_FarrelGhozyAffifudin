@@ -53,9 +53,7 @@ com.example.tugas9/
 
 ## Screenshot Aplikasi
 
-![App Screenshot](screenshots/app_screenshot.png)
-
-> **Petunjuk:** Jalankan aplikasi di device/emulator, isi judul dan konten, tekan **Save Note**, lalu ganti file `screenshots/app_screenshot.png` dengan screenshot yang menunjukkan data tersimpan.
+![App Screenshot](screenshots/app_screenshot.jpg)
 
 ## Screenshot Hasil Pengujian Database
 
