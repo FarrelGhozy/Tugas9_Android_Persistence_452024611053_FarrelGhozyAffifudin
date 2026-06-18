@@ -55,22 +55,15 @@ com.example.tugas9/
 
 ![App Screenshot](screenshots/app_screenshot.png)
 
+> **Petunjuk:** Jalankan aplikasi di device/emulator, isi judul dan konten, tekan **Save Note**, lalu ganti file `screenshots/app_screenshot.png` dengan screenshot yang menunjukkan data tersimpan.
+
 ## Screenshot Hasil Pengujian Database
 
-![Test Results](screenshots/test_results.png)
+![Test Results](screenshots/test_report_screenshot.png)
 
-**Laporan resmi (HTML):** [screenshots/test_report.html](screenshots/test_report.html)
+**Hasil:** 3/3 tests passed, 0 failures, success rate **100%** (duration 0.187s)
 
-**Detail tiap test:** [screenshots/com.example.tugas9.DatabaseTest.html](screenshots/com.example.tugas9.DatabaseTest.html)
-
-**Output terminal:** [screenshots/test_output.txt](screenshots/test_output.txt)
-
-| Test | Status | Durasi |
-|---|---|---|
-| `insertAndRetrieve` | ✅ **passed** | 0.001s |
-| `insertAndDelete` | ✅ **passed** | 0.160s |
-| `insertAndUpdate` | ✅ **passed** | 0.026s |
-| **Total** | **3/3 passed** | **0.187s** |
+**Laporan resmi:** [screenshots/test_report.html](screenshots/test_report.html) | [screenshots/test_output.txt](screenshots/test_output.txt)
 
 ## Mengapa Operasi Database Harus Menggunakan `suspend` dan `Dispatchers.IO`?
 
